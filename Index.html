@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reise Galerie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-192.png">
+</head>
+<body>
+    <h1>Meine Reise Galerie</h1>
+    <div class="gallery">
+        <div class="item">
+            <img src="https://source.unsplash.com/featured/?mountains" alt="Reisebild">
+            <h2>Alpen</h2>
+            <p>Wanderung mit herrlichem Ausblick</p>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/featured/?beach" alt="Reisebild">
+            <h2>Strand</h2>
+            <p>Entspannung am Meer</p>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
+
